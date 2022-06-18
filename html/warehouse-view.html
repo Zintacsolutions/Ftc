@@ -286,9 +286,9 @@
                     <div data-i18n="Notifications">Item</div>
                   </a>
                 </li>
-                <li class="menu-item active">
+                <li class="menu-item">
                   <a href="vehicle-view.html" class="menu-link">
-                    <div data-i18n="Notifcations">Vehicle</div>
+                    <div data-i18n="Notifications">Vehicle</div>
                   </a>
                 </li>
                 <li class="menu-item">
@@ -296,7 +296,7 @@
                     <div data-i18n="Notifications">Route</div>
                   </a>
                 </li>
-                <li class="menu-item">
+                <li class="menu-item active">
                   <a href="warehouse-view.html" class="menu-link">
                     <div data-i18n="Notifications">Ware house</div>
                   </a>
@@ -456,7 +456,7 @@
             <!-- Content -->
 
             <div class="container-xxl flex-grow-1 container-p-y">
-              <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">View/</span> Vehicle</h4>
+              <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">View/</span> Ware House</h4>
 
               <!--Basic with Icons -->
               
@@ -469,10 +469,10 @@
                         
 
                         <select class="form-select" aria-label="Default select example">
-                            <option selected>select  vehicle type</option>
-                            <option value="1">Truck</option>
-                            <option value="2">Goods</option>
-                            <option value="3">pickup</option>
+                            <option selected>Select District</option>
+                            <option value="1">calicut</option>
+                            <option value="2">malappuram</option>
+                            <option value="3">kannur</option>
                           </select>
                    
                     </div>
@@ -501,17 +501,17 @@
                 <div class="form-group pull-right">
                  
                 </div>
-                <h5 class="card-header">VEHICLE STOCK</h5>
+                <h5 class="card-header">WARE HOUSE</h5>
                 <div class="table-responsive text-nowrap">
                     <span class="counter pull-right"></span>
                   <table class="table table-hover results" id="dtBasicExample">
 
                     <thead> 
                       <tr>
-                        <th>VEHICLE ID</th>
-                        <th>NUMBER</th>
-                        <th>TYPE</th>
-                        
+                        <th>warehouse</th>
+                        <th>District</th>
+  
+ 
                         <th>Actions</th>
                       </tr>
 
@@ -519,11 +519,9 @@
                     </thead>
                     <tbody class="table-border-bottom-0">
                       <tr>
-                        <td scope="row"><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>veh1</strong></td>
-                        <td>203</td>
-                        <td>
-                          Truck
-                        </td>
+                        <td scope="row"><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>warehouse1</strong></td>
+                        <td>malappuram</td>
+                       
                         
                         <td>
                           <div class="dropdown">
@@ -542,11 +540,30 @@
                         </td>
                       </tr>
                       <tr>
-                        <td scope="row"><i class="fab fa-react fa-lg text-info me-3"></i> <strong>veh2</strong></td>
-                        <td>302</td>
+                        <td scope="row"><i class="fab fa-react fa-lg text-info me-3"></i> <strong>warehouse2</strong></td>
+                        <td>calicut</td>
+                        
+
                         <td>
-                         Goods
+                          <div class="dropdown">
+                            <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                              <i class="bx bx-dots-vertical-rounded"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="javascript:void(0);"
+                                ><i class="bx bx-edit-alt me-2"></i> Edit</a
+                              >
+                              <a class="dropdown-item" href="javascript:void(0);"
+                                ><i class="bx bx-trash me-2"></i> Delete</a
+                              >
+                            </div>
+                          </div>
                         </td>
+                      </tr>
+                      <tr>
+                        <td scope="row"><i class="fab fa-vuejs fa-lg text-success me-3"></i> <strong>warehouse3</strong></td>
+                        <td>kannur</td>
+                     
                         
                         <td>
                           <div class="dropdown">
@@ -565,38 +582,13 @@
                         </td>
                       </tr>
                       <tr>
-                        <td scope="row"><i class="fab fa-vuejs fa-lg text-success me-3"></i> <strong>veh3</strong></td>
-                        <td>540</td>
-                        <td>
-                          Truck
-                        </td>
-                       
-                        <td>
-                          <div class="dropdown">
-                            <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                              <i class="bx bx-dots-vertical-rounded"></i>
-                            </button>
-                            <div class="dropdown-menu">
-                              <a class="dropdown-item" href="javascript:void(0);"
-                                ><i class="bx bx-edit-alt me-2"></i> Edit</a
-                              >
-                              <a class="dropdown-item" href="javascript:void(0);"
-                                ><i class="bx bx-trash me-2"></i> Delete</a
-                              >
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
                         <td scope="row">
-                          <i class="fab fa-bootstrap fa-lg text-primary me-3"></i> <strong>veh4</strong>
+                          <i class="fab fa-bootstrap fa-lg text-primary me-3"></i> <strong>warehouse4</strong>
                         </td>
-                        <td>122
-                        <td>
-                          pickup
-                          </ul>
-                        </td>
-                       
+                        <td>trivandrum
+                      
+                        
+                        
                         <td>
                           <div class="dropdown">
                             <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
