@@ -166,7 +166,7 @@
                     <div data-i18n="Notifications">Item catagory</div>
                   </a>
                 </li>
-                <li class="menu-item active">
+                <li class="menu-item">
                   <a href="item-registration.html" class="menu-link">
                     <div data-i18n="Connections">item</div>
                   </a>
@@ -191,17 +191,17 @@
                     <div data-i18n="Notifications">Town</div>
                   </a>
                 </li>
-                <li class="menu-item">
+                <li class="menu-item ">
                   <a href="stock-registration.html" class="menu-link">
                     <div data-i18n="Notifications">Stock</div>
                   </a>
                 </li>
-                
-                <li class="menu-item">
+                <li class="menu-item active">
                   <a href="vendor-registration.html" class="menu-link">
                     <div data-i18n="Notifications">Vendor</div>
                   </a>
                   </li>
+                
               </ul>
             </li>
 
@@ -288,31 +288,35 @@
               </ul>
             </li>
 
+
+
             <li class="menu-item">
-              <a href="javascript:void(0);" class="menu-link menu-toggle">
-                <i class="menu-icon bx-purchase-tag bx bx-list-check"></i>
-                <div data-i18n="Account Settings">Purchase</div>
-              </a>
-              <ul class="menu-sub">
-                <li class="menu-item">
-                  <a href="AddItem-purchase.html" class="menu-link">
-                    <div data-i18n="Account">Add purchase Item</div>
-                  </a>
-                </li>
-                <li class="menu-item">
-                  <a href="add-purchase.html" class="menu-link">
-                    <div data-i18n="Notifications">Add purchase</div>
-                  </a>
-                </li>
-              
-                <li class="menu-item">
-                  <a href="list-Purchase.html" class="menu-link">
-                    <div data-i18n="Notifications">Purchase list</div>
-                  </a>
-                </li>
+                <a href="javascript:void(0);" class="menu-link menu-toggle">
+                  <i class="menu-icon bx-purchase-tag bx bx-list-check"></i>
+                  <div data-i18n="Account Settings">Purchase</div>
+                </a>
+                <ul class="menu-sub">
+                  <li class="menu-item">
+                    <a href="AddItem-purchase.html" class="menu-link">
+                      <div data-i18n="Account">Add purchase Item</div>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="add-purchase.html" class="menu-link">
+                      <div data-i18n="Notifications">Add purchase</div>
+                    </a>
+                  </li>
                 
-              </ul>
-            </li>
+                  <li class="menu-item">
+                    <a href="list-Purchase.html" class="menu-link">
+                      <div data-i18n="Notifications">Purchase list</div>
+                    </a>
+                  </li>
+                  
+                </ul>
+              </li>
+  
+
 
 
 
@@ -464,7 +468,7 @@
             <!-- Content -->
 
             <div class="container-xxl flex-grow-1 container-p-y">
-              <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Registration/</span> Item</h4>
+              <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Registration/</span> Vendor</h4>
 
               <!--Basic with Icons -->
               
@@ -472,64 +476,127 @@
                 <div class="col-xxl">
                   <div class="card mb-4">
                     <div class="card-header d-flex align-items-center justify-content-between">
-                      <h5 class="mb-0">Item Registration</h5>
+                      <h5 class="mb-0">ADD VENDOR</h5>
                       <small class="text-muted float-end"><!--add example text optional pushpa --></small>
                     </div>
                     <div class="card-body">
                       <form>
                         <div class="row mb-3">
-                          <label class="col-sm-2 col-form-label" for="basic-icon-default-fullname">Item number</label>
+                          <label class="col-sm-2 col-form-label" for="basic-icon-default-fullname">vendor Name</label>
                           <div class="col-sm-10">
                             <div class="input-group input-group-merge">
                               <span id="basic-icon-default-fullname2" class="input-group-text"
-                                ><i class="bx bx-category"></i></span>
+                                ><i class="bx bxs-user-account"></i></span>
                               <input
                                 type="text"
                                 class="form-control"
                                 id="basic-icon-default-fullname"
-                                placeholder="Item number"
-                                aria-label="itemnum"
+                                placeholder="vendor name"
+                                aria-label="shopname"
                                 aria-describedby="basic-icon-default-fullname2"
                               />
                             </div>
                           </div>
                         </div>
                         <div class="row mb-3">
-                          <label class="col-sm-2 col-form-label" for="basic-icon-default-company">item name</label>
+                          <label class="col-sm-2 col-form-label" for="basic-icon-default-company">place</label>
                           <div class="col-sm-10">
                             <div class="input-group input-group-merge">
                               <span id="basic-icon-default-company2" class="input-group-text"
-                                ><i class="bx bx-rename"></i
+                                ><i class="bx bx-map"></i
                               ></span>
                               <input
                                 type="text"
                                 id="basic-icon-default-company"
                                 class="form-control"
-                                placeholder="Item name"
-                                aria-label="itemname"
+                                placeholder="place"
+                                aria-label="place"
                                 aria-describedby="basic-icon-default-company2"
                               />
                             </div>
                           </div>
                         </div>
 
-                        
-
 
                         <div class="row mb-3">
-                            <label class="col-sm-2 col-form-label" for="basic-icon-default-company">item catagory</label>
+                            <label class="col-sm-2 col-form-label" for="basic-icon-default-company">State</label>
                             <div class="col-sm-10">
                                 <div class="input-group input-group-merge">
                                     <span id="basic-icon-default-company2" class="input-group-text"
-                                      ><i class="bx bxs-category-alt"></i
+                                      ><i class="bx bx-map-pin"></i
                                     ></span>
                                     
                                     <select class="form-select" id="exampleFormControlSelect1" aria-label="Default select example">
                                         
-                                      <option selected>select catagory</option>
-                                      <option value="1">{{%catagory1%}}</option>
-                                      <option value="2">catagory2</option>
-                                      <option value="3">catagory3</option>
+                                      <option selected>Kerala</option>
+                                      <option value="1">Panjab</option>
+                                      <option value="2">Tn</option>
+                                      <option value="3">Delhi</option>
+                                    </select>
+                                  </div>
+                           
+                          </div>                         
+                        </div>
+
+
+           
+
+
+                        <div class="row mb-3">
+                          <label class="col-sm-2 col-form-label" for="basic-icon-default-email">Email</label>
+                          <div class="col-sm-10">
+                            <div class="input-group input-group-merge">
+                              <span class="input-group-text"><i class="bx bx-envelope"></i></span>
+                              <input
+                                type="text"
+                                id="basic-icon-default-email"
+                                class="form-control"
+                                placeholder="mail"
+                                aria-label="mail"
+                                aria-describedby="basic-icon-default-email2"
+                              />
+                              <span id="basic-icon-default-email2" class="input-group-text">@example.com</span>
+                            </div>
+                            <div class="form-text">You can use letters, numbers & periods</div>
+                          </div>
+                        </div>
+                        <div class="row mb-3">
+                          <label class="col-sm-2 form-label" for="basic-icon-default-phone">Phone No</label>
+                          <div class="col-sm-10">
+                            <div class="input-group input-group-merge">
+                              <span id="basic-icon-default-phone2" class="input-group-text"
+                                ><i class="bx bx-phone"></i
+                              ></span>
+                              <input
+                                type="text"
+                                id="basic-icon-default-phone"
+                                class="form-control phone-mask"
+                                placeholder="658 799 8941"
+                                aria-label="658 799 8941"
+                                aria-describedby="basic-icon-default-phone2"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                       
+
+                        <div class="row mb-3">
+                            <label class="col-sm-2 col-form-label" for="basic-icon-default-company">District</label>
+                            <div class="col-sm-10">
+                                <div class="input-group input-group-merge">
+                                    <span id="basic-icon-default-company2" class="input-group-text"
+                                      ><i class="bx bx-directions"></i
+                                    ></span>
+                                    
+                                    <select class="form-select" id="exampleFormControlSelect1" aria-label="Default select example">
+                                        
+                                      <option selected>Malappuram</option>
+                                      <option value="1">Calicut</option>
+                                      <option value="2">Kannur</option>
+                                      <option value="3">Idukki</option>
+                                      <option value="3">Alapuzha</option>
+                                      <option value="3">Trivandrum</option>
+                                      <option value="3">Alapuzha</option>
                                     </select>
                                   </div>
                            
@@ -538,44 +605,54 @@
 
 
                         <div class="row mb-3">
-                            <label class="col-sm-2 col-form-label" for="basic-icon-default-company">item price</label>
-                            <div class="col-sm-10">
+                          <label class="col-sm-2 col-form-label" for="basic-icon-default-company">Town</label>
+                          <div class="col-sm-10">
                               <div class="input-group input-group-merge">
-                                <span id="basic-icon-default-company2" class="input-group-text"
-                                  ><i class="bx bx-rupee"></i
-                                ></span>
-                                <input
-                                  type="number"
-                                  id="basic-icon-default-company"
-                                  class="form-control"
-                                  placeholder="Item price"
-                                  aria-label="itemname"
-                                  aria-describedby="basic-icon-default-company2"
-                                />
-                              </div>
-                            </div>
-                        </div>
-
-
-                        <div class="row mb-3">
-                            <label class="col-sm-2 col-form-label" for="basic-icon-default-company">Image</label>
-                            <div class="col-sm-10">
+                                  <span id="basic-icon-default-company2" class="input-group-text"
+                                    ><i class="bx bx-street-view"></i
+                                  ></span>
+                                  
+                                  <select class="form-select" id="exampleFormControlSelect1" aria-label="Default select example">
+                                      
+                                    <option selected>select town</option>
+                                    <option value="1">areekode</option>
+                                    <option value="2">kizhissery</option>
+                                    <option value="3">kondotty</option>
                             
-                            <input class="form-control" type="file" id="formFile" />
+                                    <option value="4">manjery</option>
+                              
+                                  </select>
+                                </div>
+                         
+                        </div>                         
+                      </div>
+
+
+
+                      <div class="row mb-3">
+                        <label class="col-sm-2 form-label" for="basic-icon-default-phone">map link</label>
+                        <div class="col-sm-10">
+                          <div class="input-group input-group-merge">
+                            <span id="basic-icon-default-phone2" class="input-group-text"
+                              ><i class="bx bx-map-alt"></i
+                            ></span>
+                            <input
+                              type="text"
+                              id="basic-icon-default-phone"
+                              class="form-control phone-mask"
+                              placeholder="map link"
+                              aria-label="maplink"
+                              aria-describedby="basic-icon-default-phone2"
+                            />
                           </div>
-                          </div>
-
-
-           
-
-
-                        
-                        
+                          <div class="form-text"> Optional</div>
+                        </div>
+                      </div>
 
 
                         <div class="row justify-content-end">
                           <div class="col-sm-10">
-                            <button type="submit" class="btn btn-primary">Register</button>
+                            <button type="submit" class="btn btn-primary">Add</button>
                           </div>
                         </div>
                       </form>
